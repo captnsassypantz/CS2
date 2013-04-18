@@ -1,0 +1,19 @@
+Problem C: Stick Splitting (sticks.java)
+Given a stick of length n, the cost of cutting it into two sticks is n. Your goal will be to determine the minimal cost of taking a given stick of a particular length and making k cuts at given places on the stick. For example, if the original stick is of length 10 and we need to make cuts at 2, 5 and 6 inches from one end, then, if we cut in order, our cost is 10 + 8 + 5 = 23. But, if we cut in the middle first, our cost is 10 + 5 + 5. We can also achieve 20 by cutting at the 6 inch mark (cost 10), followed by cutting at the 2 inch mark (cost 6) and finally the 5 inch mark (cost 4).
+
+The Input
+The first line of input will consist of a single positive integer, n, representing the number of test cases. The first line of each test case will contain a single positive integer, L (L ≤ 10000), the length of the original stick for the case. The first integer on the second line of each test case will contain a single positive integer, c(c ≤ 100), representing the number of cuts that need to be made on the stick. The following c integers on the line represent the distance from the left end of the stick that a cut needs to be made. Each of these values will be separated by a space. These values will be distinct and in sorted order. Each will be greater than 0 and less than L.
+
+The Output
+For each test case, output a single positive integer representing the minimal cost of making the cuts outlined.
+
+Sample Input
+2
+100
+3 25 50 75
+10
+3 2 5 6
+
+Sample Output
+200
+20
